@@ -1,25 +1,41 @@
+import Link from "next/link";
 import { JSX } from "react";
+import Badge from "./ui/Badge";
+import { motion } from "motion/react";
+import { fadeUp } from "@/motionPresets";
 
 const GetInTouch = () => {
   return (
     <div className="w-full min-h-screen flex items-center justify-center">
-      <div className="max-w-6xl mx-auto w-full text-center space-y-4">
-        <span className="text-4xl font-medium flex flex-col ">
-          Get In Touch
-        </span>
+      <motion.div
+        {...fadeUp}
+        className="max-w-6xl mx-auto w-full text-center space-y-4"
+      >
+        <Badge text="Get to know more about me" />
+        <span className="text-4xl font-medium flex flex-col">Get In Touch</span>
         <p className="text-neutral-400">
           I'd love to hear from you. Let's create something great together.
         </p>
-        <div className="flex flex-wrap justify-center gap-4 mt-8">
-          <SocialLinkSpan icon={<EmailSVG />} name="akinnanju4@gmail.com" />
-          <SocialLinkSpan icon={<LinkedinSVG />} name="Linkedin" />
+        <div className="flex flex-wrap md:flex-row flex-col px-10 justify-center gap-4 mt-8">
+          <SocialLinkSpan
+            icon={<EmailSVG />}
+            name="akinnanju4@gmail.com"
+            link="/contacts"
+          />
+          <SocialLinkSpan
+            icon={<LinkedinSVG />}
+            name="Linkedin"
+            link="https://www.linkedin.com/in/akin-nanju/"
+            target={true}
+          />
           <SocialLinkSpan
             icon={<BehanceSVG />}
             name="Behance"
             link="https://www.behance.net/akinnanju1"
+            target={true}
           />
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
@@ -84,31 +100,20 @@ const SocialLinkSpan = ({
   icon,
   name,
   link,
+  target = false,
 }: {
   icon: JSX.Element;
   name: string;
-  link?: string;
+  link: string;
+  target?: boolean;
 }) => {
   return (
-    <a href={link} target="_blank">
-      <span
-        className="
-      border border-neutral-300
-      rounded-full
-      px-6 py-3
-      text-sm
-      text-neutral-700
-      bg-transparent
-      whitespace-nowrap
-      hover:bg-neutral-200/60
-      flex items-center justify-center gap-1.5
-      tracking-wide cursor-pointer
-      "
-      >
+    <Link href={link} target={target ? "_blank" : "_self"}>
+      <span className="border border-neutral-300 rounded-full px-6 py-3 text-sm text-neutral-700 bg-transparent whitespace-nowrap hover:bg-neutral-200/60 flex items-center justify-center gap-1.5 tracking-wide cursor-pointer">
         {icon}
         {name}
       </span>
-    </a>
+    </Link>
   );
 };
 

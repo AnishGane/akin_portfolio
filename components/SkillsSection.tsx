@@ -1,10 +1,16 @@
 import { Skills } from "@/constants/data";
+import { fadeUp } from "@/motionPresets";
+import { motion } from "motion/react";
+import Badge from "./ui/Badge";
 
 const SkillsSection = () => {
   return (
-    <div className="w-full min-h-screen flex items-center justify-center">
+    <div className="w-full min-h-screen flex items-center  justify-center">
       <div className="max-w-7xl mx-auto text-center">
-        <span className="text-4xl font-medium flex flex-col">Skills</span>
+        <Badge text="Here is what I know" />
+        <motion.span {...fadeUp} className="text-4xl font-medium flex flex-col">
+          Skills
+        </motion.span>
         <div className="flex flex-wrap justify-center gap-4 mt-8 max-w-4xl mx-auto">
           {Skills.map((skill) => (
             <SkillSpan key={skill.name} name={skill.name} />
@@ -17,7 +23,9 @@ const SkillsSection = () => {
 
 const SkillSpan = ({ name }: { name: string }) => {
   return (
-    <span
+    <motion.span
+      {...fadeUp}
+      transition={{ ...fadeUp.transition, delay: 0.15 }}
       className="
           border border-neutral-300
           rounded-full
@@ -30,7 +38,7 @@ const SkillSpan = ({ name }: { name: string }) => {
         "
     >
       {name}
-    </span>
+    </motion.span>
   );
 };
 

@@ -27,58 +27,44 @@ export const Skills: Skill[] = [
 export const projects: Project[] = [
   {
     id: 1,
-    image:
-      "https://images.unsplash.com/photo-1572177812156-58036aae439c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    name: "Dental clinic Website",
-    link: "www.google.com",
+    image: "/images/Yeti_air.png",
+    name: "Yeti Airlines",
+    link: "https://www.behance.net/gallery/240696863/Yeti-Airlines-Redesign",
   },
   {
     id: 2,
-    image:
-      "https://images.unsplash.com/photo-1572177812156-58036aae439c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    name: "Fintech Mobile App",
-    link: "www.google.com",
+    image: "/images/Konen_landing_page.png",
+    name: "Koenigsegg Jesko - Landing Page",
+    link: "https://www.behance.net/gallery/238497961/Koenigsegg-Jesko-Hypercar-Landing-Page-Concept",
   },
   {
     id: 3,
-    image:
-      "https://images.unsplash.com/photo-1572177812156-58036aae439c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    name: "Travelly Landing Page",
-    link: "www.google.com",
+    image: "/images/Mood_Sync.png",
+    name: "MoodSync",
+    link: "https://www.behance.net/gallery/238335987/Mood-Sync",
   },
   {
     id: 4,
-    image:
-      "https://images.unsplash.com/photo-1572177812156-58036aae439c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    name: "Travel Website Landing Page",
-    link: "www.google.com",
+    image: "/images/otakuverse.png",
+    name: "Otaku Verse",
+    link: "https://www.behance.net/gallery/234717155/OtakuVerse-Anime-E-Commerce-Website",
   },
   {
     id: 5,
-    image:
-      "https://images.unsplash.com/photo-1572177812156-58036aae439c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    name: "Protfolio Site Exploration",
+    image: "/images/Neura_motto.png",
+    name: "Nuera Motto",
     link: "www.google.com",
   },
   {
     id: 6,
-    image:
-      "https://images.unsplash.com/photo-1572177812156-58036aae439c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    name: "E-commerce Store",
-    link: "www.google.com",
+    image: "/images/Sam_tv.png",
+    name: "Sam TV - Website",
+    link: "https://www.behance.net/gallery/235518899/SAM-TV-Movies-Gaming-Platform",
   },
   {
     id: 7,
-    image:
-      "https://images.unsplash.com/photo-1572177812156-58036aae439c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    name: "Medical App Design",
-    link: "www.google.com",
-  },
-  {
-    id: 8,
-    image:
-      "https://images.unsplash.com/photo-1572177812156-58036aae439c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    name: "Food & Beverage Mobile App",
-    link: "www.google.com",
+    image: "/images/Bite_Swift.png",
+    name: "BiteSwift",
+    link: "https://www.behance.net/gallery/237292955/Bite-Swift",
   },
 ];
