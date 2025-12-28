@@ -45,9 +45,9 @@ export const projects: Project[] = [
   },
   {
     id: 4,
-    image: "/images/otakuverse.png",
-    name: "Otaku Verse",
-    link: "https://www.behance.net/gallery/234717155/OtakuVerse-Anime-E-Commerce-Website",
+    image: "/images/Hypecar.png",
+    name: "Hype Car",
+    link: "https://www.behance.net/gallery/238872539/HYPECAR-Mobile-Hypercar-Configurator-Concept",
   },
   {
     id: 5,
