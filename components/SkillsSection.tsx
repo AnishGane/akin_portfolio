@@ -5,13 +5,13 @@ import Badge from "./ui/Badge";
 
 const SkillsSection = () => {
   return (
-    <div className="w-full px-2 min-h-screen flex items-center  justify-center">
+    <div className="w-full px-2.5 min-h-screen flex items-center  justify-center">
       <div className="max-w-7xl mx-auto text-center">
         <Badge text="Here is what I know" />
         <motion.span {...fadeUp} className="text-4xl font-medium flex flex-col">
           Skills
         </motion.span>
-        <div className="flex flex-wrap justify-center gap-4 mt-8 max-w-4xl mx-auto">
+        <div className="flex flex-wrap flex-col md:flex-row justify-center gap-4 mt-8 max-w-4xl mx-auto">
           {Skills.map((skill) => (
             <SkillSpan key={skill.name} name={skill.name} />
           ))}
