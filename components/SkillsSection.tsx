@@ -5,7 +5,7 @@ import Badge from "./ui/Badge";
 
 const SkillsSection = () => {
   return (
-    <div className="w-full min-h-screen flex items-center  justify-center">
+    <div className="w-full px-2 min-h-screen flex items-center  justify-center">
       <div className="max-w-7xl mx-auto text-center">
         <Badge text="Here is what I know" />
         <motion.span {...fadeUp} className="text-4xl font-medium flex flex-col">
