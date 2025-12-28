@@ -6,7 +6,7 @@ import Badge from "./ui/Badge";
 
 const Projects = () => {
   return (
-    <div className="w-full min-h-screen flex bg-neutral-200/40 pt-10 items-center justify-center">
+    <div className="w-full px-5 min-h-screen flex bg-neutral-200/40 pt-10 items-center justify-center">
       <div className="max-w-sm md:max-w-2xl xl:max-w-6xl mx-auto w-full text-center">
         <Badge text="Get a proof of my work" />
         <motion.span

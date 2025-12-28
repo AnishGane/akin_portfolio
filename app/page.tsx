@@ -71,15 +71,14 @@ const Home = () => {
 
       {/* Content */}
       <LandingSection showContent={showContent} />
-      <div className="px-3">
-        <AboutSection />
 
-        <SkillsSection />
+      <AboutSection />
 
-        <Projects />
+      <SkillsSection />
 
-        <GetInTouch />
-      </div>
+      <Projects />
+
+      <GetInTouch />
 
       <div className="w-full border-t border-neutral-300 text-sm tracking-wide text-neutral-500 text-center py-6">
         <p>&copy;{new Date().getFullYear()} Akin Nanju. All rights reserved</p>

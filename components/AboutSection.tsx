@@ -7,7 +7,7 @@ const AboutSection = () => {
   return (
     <div
       id="about"
-      className="w-full min-h-screen bg-neutral-200/40 flex items-center justify-center"
+      className="w-full min-h-screen px-4 bg-neutral-200/40 flex items-center justify-center"
     >
       <div className="max-w-7xl mx-auto text-center">
         <Badge text="Learn more about me" />

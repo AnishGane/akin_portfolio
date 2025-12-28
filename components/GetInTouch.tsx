@@ -6,7 +6,7 @@ import { fadeUp } from "@/motionPresets";
 
 const GetInTouch = () => {
   return (
-    <div className="w-full min-h-screen flex items-center justify-center">
+    <div className="w-full  min-h-screen flex items-center justify-center">
       <motion.div
         {...fadeUp}
         className="max-w-6xl mx-auto w-full text-center space-y-4"
