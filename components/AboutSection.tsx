@@ -2,7 +2,6 @@ import { fadeUp } from "@/motionPresets";
 import { motion } from "motion/react";
 import Badge from "./ui/Badge";
 
-
 const AboutSection = () => {
   return (
     <div
@@ -21,13 +20,19 @@ const AboutSection = () => {
 
         <motion.p
           {...fadeUp}
-          viewport={{ margin: "-25% 0px -25% 0px"}}
+          viewport={{ margin: "-25% 0px -25% 0px" }}
           transition={{ ...fadeUp.transition, delay: 0.15 }} // small stagger
-          className="max-w-sm md:max-w-xl mx-auto mt-8 text-neutral-600 text-sm md:text-lg"
+          className="max-w-sm md:max-w-2xl mx-auto mt-8 text-neutral-600 text-sm md:text-base"
         >
-          I am a beginner designer developing my foundation in UI/UX and visual
-          design. Currently studying and practicing core principles to build a
-          strong base for my design career.
+          I’m a student designer passionate about turning strong concepts into
+          meaningful digital experiences. I create clean, engaging interfaces
+          where layout, color, and motion work together with purpose. I focus on
+          exploring ideas deeply and refining details until every design feels
+          intentional and balanced. <br />
+          <br />
+          Through hands-on projects, I’m building my skills in modern UI
+          patterns, animations, and interaction design, always pushing my limits
+          to improve and deliver polished, thoughtful work.
         </motion.p>
       </div>
     </div>

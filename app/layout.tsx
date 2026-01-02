@@ -21,7 +21,7 @@ export const roboto = Roboto({
 export const lora = Lora({
   subsets: ["latin"],
   variable: "--font-lora",
-})
+});
 
 export default function RootLayout({
   children,
@@ -29,8 +29,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${montserrat.variable} ${roboto.variable} ${lora.variable} antialiased`}>
+    <html lang="en" suppressHydrationWarning>
+      <body
+        className={`${montserrat.variable} ${roboto.variable} ${lora.variable} antialiased`}
+      >
         {children}
       </body>
     </html>
